@@ -97,7 +97,7 @@ StructureSpawn.prototype.spawnCreepsIfNecessary =
                 }
                 // if no claim order was found, check other roles
                 // check if role has not reach maximum amount of creeps for its role
-                else if (numberOfCreeps[role] < min_[role]) {
+                else if (numberOfCreeps[role] < max_[role]) {
                     if (role == 'lorry') {
                         name = this.createLorry(150);
                     }
