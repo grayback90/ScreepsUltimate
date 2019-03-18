@@ -9,3 +9,13 @@
 *           the entrances
 *
 **********************************************/
+
+/*
+Functions:
+- work as a towerWatcher/upgrader
+- if attacker comes to room
+-- go to rampart
+-- stay there and attack all enemies in range
+- if there is no more enemy in room
+-- go working again
+*/

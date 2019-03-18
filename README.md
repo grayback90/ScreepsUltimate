@@ -16,6 +16,7 @@ Currently working on:
 ToDos:
 ----
 - optimization on all roles (example: only upgrader should use energy from storage if necessary and other changes)
+- all roles: if attacker/enemy comes to room --> go to save-flag (first only the save-flag, later check if your current has own save-flag)
 - after GCL is 2: claim new room and build it up (stable population, upgrade roomcontroller, build towers and other structures)
 - additional roles: attacker, defender, healer (priest)
 - new function on the lorry: collects dropped energy (higher priority than collect energy from the container)
