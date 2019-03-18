@@ -8,6 +8,9 @@
 *           special creeps and storing
 *           all roles
 *
+* todo: put the max number of creeps
+*       per role into the code
+*
 **********************************************/
 
 var listOfRoles = ['harvester', 'lorry', 'claimer', 'upgrader', 'repairer', 'builder', 'wallRepairer'];

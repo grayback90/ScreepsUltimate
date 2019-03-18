@@ -35,10 +35,9 @@ Creep.prototype.getEnergy =
         let container;
         // if the Creep should look for containers
         if (useContainer) {
-            // find closest container
-            // now the creeps shouldnt use the storage / i just want to fill it up
+            // find closest container or storage
             container = this.pos.findClosestByPath(FIND_STRUCTURES, {
-                filter: s => (s.structureType == STRUCTURE_CONTAINER /*|| s.structureType == STRUCTURE_STORAGE*/) &&
+                filter: s => (s.structureType == STRUCTURE_CONTAINER || s.structureType == STRUCTURE_STORAGE) &&
                              s.store[RESOURCE_ENERGY] > 0
             });
             // if one was found
