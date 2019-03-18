@@ -1,4 +1,4 @@
 18.03.2019:
-- Erster Commit
-- Grundlegende Sachen aus meinem anderen Screeps Repo übernommen
-
+- first commit
+- took the code from my ScreepsLegacy - Repo
+- changed some details in the README
