@@ -1,0 +1,4 @@
+18.03.2019:
+- Erster Commit
+- Grundlegende Sachen aus meinem anderen Screeps Repo übernommen
+
