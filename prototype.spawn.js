@@ -16,7 +16,7 @@
 var listOfRoles = ['harvester', 'lorry', 'claimer', 'upgrader', 'repairer', 'builder', 'wallRepairer'/*, 'guard'*/];
 var max_harvester = 2;
 var max_lorry = 1;
-var max_upgrader = 2;
+var max_upgrader = 1;
 var max_repairer = 1;
 var max_builder = 1;
 var max_wallRepairer = 1;
@@ -199,13 +199,20 @@ StructureSpawn.prototype.createClaimer =
         return this.createCreep([CLAIM, MOVE], undefined, { role: 'claimer', target: target });
     };
 
-// create a new function for StructureSpawn
+// create a new function for StructureSpawn to create a miner
 StructureSpawn.prototype.createMiner =
     function (sourceId) {
         return this.createCreep([WORK, WORK, WORK, WORK, WORK, MOVE], undefined,
                                 { role: 'miner', sourceId: sourceId });
     };
 
+// create a new function for StructureSpawn to create a guard
+/*StructureSpawn.prototype.createGuard =
+    function () {
+        return this.createCreep([WORK,CARRY, MOVE, MOVE, RANGED_ATTACK, RANGED_ATTACK], undefined,
+                                { role: 'guard', working: false });
+    };
+*/
 // create a new function for StructureSpawn to create a lorry
 StructureSpawn.prototype.createLorry =
     function (energy) {
