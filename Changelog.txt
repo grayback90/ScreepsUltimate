@@ -1,4 +1,4 @@
 18.03.2019:
 - first commit
-- took the code from my ScreepsLegacy - Repo
 - changed some details in the README
+- import and changed the first classes from my ScreepsLegacy-Repo
