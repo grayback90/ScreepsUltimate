@@ -4,4 +4,7 @@
 - import all files from my ScreepsLegacy-Repo
 - changed some of the files, but no big changes
 - despite number of minimum creeps per role is now in the code
-- create empty file for future role "guard"
+- create empty file for future role "guard" + comments of my thoughts
+
+19.03.2019
+- 
