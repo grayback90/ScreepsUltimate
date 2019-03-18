@@ -29,7 +29,7 @@ Role ideas + modifies for existing roles (ideas from "Pantek59"):
 - (1) modify "builder": -> only spawns if there is a construction site, after building go upgrade till death
 - (5) new role "energy hauler": -> transport energy from remote stationary harvesters back to spawn room
 - (1) new role "miniHarvester": -> needs only 200 energy, if all creeps die and not enough energy is stored
-- (2) new role "defender": -> sits on the entrance and defend it, maybe patrolling
+- (2) new role "guard": -> sits on the entrance and defend it, maybe patrolling
 - (1) new role "protector": -> spawns if "Panic Flag" is set and goes there to protect this room
 - (1) new role "remoteHarvester": -> harvest sources in remote rooms, can set the "Panic Flag"
 - (3) new role "remoteStationaryHarvester": -> like a miner just in a remote room and can build container if there is no

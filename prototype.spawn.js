@@ -14,6 +14,14 @@
 **********************************************/
 
 var listOfRoles = ['harvester', 'lorry', 'claimer', 'upgrader', 'repairer', 'builder', 'wallRepairer'];
+var max_harvester = 2;
+var max_lorry = 1;
+var max_upgrader = 2;
+var max_repairer = 1;
+var max_builder = 1;
+var max_wallRepairer = 1;
+var max_claimer = 0; //not neccessary -> spawns only if there is a claim-call -> only that no errors occur
+var minMiner = 1; //not neccessary -> miners spawn only if source has container near and there is no miner there  -> only that no errors occur
 
 // create a new function for StructureSpawn
 StructureSpawn.prototype.spawnCreepsIfNecessary =
@@ -87,10 +95,14 @@ StructureSpawn.prototype.spawnCreepsIfNecessary =
                     }
                 }
                 // if no claim order was found, check other roles
-                else if (numberOfCreeps[role] < this.memory.minCreeps[role]) {
+                // check if role has not reach maximum amount of creeps for its role
+                else if (numberOfCreeps[role] < min_[role]) {
                     if (role == 'lorry') {
                         name = this.createLorry(150);
                     }
+                    /*else if (role == 'guard') {
+                      name = this.createGuard(xxx);
+                    }*/
                     else {
                         name = this.createCustomCreep(maxEnergy, role);
                     }
