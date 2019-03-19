@@ -15,6 +15,8 @@
 // because he needs not so many bodyparts to work
 var roleUpgrader = require('role.upgrader');
 
+// only logic for upgrader
+// TODO: implement logic for guard
 module.exports = {
     // a function to run the logic for this role
     /** @param {Creep} creep */
@@ -42,6 +44,14 @@ module.exports = {
         else {
             creep.getEnergy(true, true);
         }
+
+        // logic for guard
+        /*if (enemy comes to room) {
+          * stop working -> guarding: true
+          * go to rampart
+          * attack enemies that are near
+          * enemy dead -> guarding: false
+        }*/
     }
 };
 

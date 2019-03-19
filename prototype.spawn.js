@@ -208,7 +208,7 @@ StructureSpawn.prototype.createMiner =
 StructureSpawn.prototype.createGuard =
     function () {
         return this.createCreep([WORK,CARRY, MOVE, MOVE, RANGED_ATTACK], undefined,
-                                { role: 'guard', working: false });
+                                { role: 'guard', working: false, guarding: false });
     };
 
 // create a new function for StructureSpawn to create a lorry

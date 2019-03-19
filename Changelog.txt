@@ -1,3 +1,6 @@
+20.03.2019
+- 
+
 19.03.2019
 - logic for the role guard
 - implementing the spawning of guards
