@@ -2,7 +2,7 @@
 *
 * file: prototype.tower.js
 * date: 18.03.2019
-* version: 0.1
+* version: 1.0
 *
 * funtions: logic for all towers to find
 *           and attack enemies

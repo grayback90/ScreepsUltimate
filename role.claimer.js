@@ -2,7 +2,7 @@
 *
 * file: role.claimer.js
 * date: 18.03.2019
-* version: 0.1
+* version: 1.0
 *
 * funtions: claims a roomcontroller in
 *           a specific room

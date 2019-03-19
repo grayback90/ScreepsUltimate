@@ -2,7 +2,7 @@
 *
 * file: role.builder.js
 * date: 18.03.2019
-* version: 0.1
+* version: 1.0
 *
 * funtions: build structures from
 *           constructionSites and if

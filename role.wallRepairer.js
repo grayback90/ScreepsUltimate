@@ -2,7 +2,7 @@
 *
 * file: role.wallRepairer.js
 * date: 18.03.2019
-* version: 0.1
+* version: 1.0
 *
 * funtions: repairs walls and
 *           if there is no wall to repair

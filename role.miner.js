@@ -2,7 +2,7 @@
 *
 * file: role.miner.js
 * date: 18.03.2019
-* version: 0.1
+* version: 1.0
 *
 * funtions: sits on a container
 *           and mines the source

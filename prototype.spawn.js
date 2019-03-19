@@ -2,7 +2,7 @@
 *
 * file: prototype.spawn.js
 * date: 19.03.2019
-* version: 0.2
+* version: 1.1
 *
 * funtions: logic for spawning normal and
 *           special creeps and storing
@@ -10,7 +10,7 @@
 *
 **********************************************/
 
-var listOfRoles = ['harvester', 'lorry', 'claimer', 'upgrader', 'repairer', 'builder', 'wallRepairer'/*, 'guard'*/];
+var listOfRoles = ['harvester', 'lorry', 'claimer', 'upgrader', 'repairer', 'builder', 'wallRepairer', 'guard'];
 var max_harvester = 2;
 var max_lorry = 1;
 var max_upgrader = 1;

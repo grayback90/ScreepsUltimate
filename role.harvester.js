@@ -2,7 +2,7 @@
 *
 * file: role.harvester.js
 * date: 18.03.2019
-* version: 0.1
+* version: 1.0
 *
 * funtions: harvest the source in the
 *           spawn room and fills the

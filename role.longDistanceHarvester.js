@@ -2,7 +2,7 @@
 *
 * file: role.longDistanceHarvester.js
 * date: 18.03.2019
-* version: 0.1
+* version: 1.0
 *
 * funtions: harvest the source in another
 *           room and brings it back to the

@@ -2,7 +2,7 @@
 *
 * file: prototype.creep.js
 * date: 18.03.2019
-* version: 0.1
+* version: 1.1
 *
 * funtions: logic for creeps to get
 *           energy
@@ -19,6 +19,7 @@ var roles = {
     claimer: require('role.claimer'),
     miner: require('role.miner'),
     lorry: require('role.lorry')
+    guard: require('role.guard')
 };
 
 Creep.prototype.runRole =
