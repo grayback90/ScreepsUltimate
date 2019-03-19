@@ -13,8 +13,8 @@ Link to my wiki page: https://github.com/RituGray/ScreepsUltimate/wiki
 
 Currently working on:
 ----
-- take the memory for the maximum spawned creeps (per role) into the code (seperate file like json or xml) so its easier to change
 - new role: guard
+- new function on the lorry: collects dropped energy (higher priority than collect energy from the container) -> https://docs.screeps.com/api/#Creep.pickup
 
 ToDos:
 ----
@@ -22,7 +22,6 @@ ToDos:
 - after GCL is 2: claim new room and build it up (stable population, upgrade roomcontroller, build towers and other structures)
 - additional roles: guard, monk, knight, ranger, etc. (see Role ideas below)
 - modify all screeps: "panikroom", building roads (maybe a thing for the constructor), etc. (see Role ideas below)
-- new function on the lorry: collects dropped energy (higher priority than collect energy from the container) -> https://docs.screeps.com/api/#Creep.pickup
 - more testing and optimization on the AI of the screeps on my on server
 - testing with bots
 - testing on a real server

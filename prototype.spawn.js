@@ -1,15 +1,12 @@
 /**********************************************
 *
 * file: prototype.spawn.js
-* date: 18.03.2019
-* version: 0.1
+* date: 19.03.2019
+* version: 0.2
 *
 * funtions: logic for spawning normal and
 *           special creeps and storing
 *           all roles
-*
-* todo: put the max number of creeps
-*       per role into the code
 *
 **********************************************/
 
@@ -22,7 +19,7 @@ var max_builder = 1;
 var max_wallRepairer = 1;
 var max_claimer = 0; //not neccessary -> spawns only if there is a claim-call -> only that no errors occur
 var max_miner = 1; //not neccessary -> miners spawn only if source has container near and there is no miner there  -> only that no errors occur
-//var max_guard = 2; two guards are enough for one rampart
+var max_guard = 2; //two guards are enough for one rampart
 
 // create a new function for StructureSpawn
 StructureSpawn.prototype.spawnCreepsIfNecessary =
@@ -101,9 +98,10 @@ StructureSpawn.prototype.spawnCreepsIfNecessary =
                     if (role == 'lorry') {
                         name = this.createLorry(150);
                     }
-                    /*else if (role == 'guard' && one free rampart is there (maybe work with flags)) {
+                    //guard behaves like upgrader so no other condition is necessary
+                    else if (role == 'guard') {
                       name = this.createGuard(xxx);
-                    }*/
+                    }
                     else {
                         name = this.createCustomCreep(maxEnergy, role);
                     }
@@ -207,12 +205,12 @@ StructureSpawn.prototype.createMiner =
     };
 
 // create a new function for StructureSpawn to create a guard
-/*StructureSpawn.prototype.createGuard =
+StructureSpawn.prototype.createGuard =
     function () {
-        return this.createCreep([WORK,CARRY, MOVE, MOVE, RANGED_ATTACK, RANGED_ATTACK], undefined,
+        return this.createCreep([WORK,CARRY, MOVE, MOVE, RANGED_ATTACK], undefined,
                                 { role: 'guard', working: false });
     };
-*/
+
 // create a new function for StructureSpawn to create a lorry
 StructureSpawn.prototype.createLorry =
     function (energy) {
