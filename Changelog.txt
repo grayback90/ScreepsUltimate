@@ -1,10 +1,11 @@
 20.03.2019
-- 
+-
 
 19.03.2019
 - logic for the role guard
 - implementing the spawning of guards
 - setting all "old" roles to version 1.0 because the work as intended
+- writing version 1.0 of the guard role
 
 18.03.2019:
 - first commit

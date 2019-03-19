@@ -13,13 +13,13 @@
 var listOfRoles = ['harvester', 'lorry', 'claimer', 'upgrader', 'repairer', 'builder', 'wallRepairer', 'guard'];
 var max_harvester = 2;
 var max_lorry = 1;
-var max_upgrader = 1;
+var max_upgrader = 2;
 var max_repairer = 1;
 var max_builder = 1;
 var max_wallRepairer = 1;
 var max_claimer = 0; //not neccessary -> spawns only if there is a claim-call -> only that no errors occur
 var max_miner = 1; //not neccessary -> miners spawn only if source has container near and there is no miner there  -> only that no errors occur
-var max_guard = 2; //two guards are enough for one rampart
+var max_guard = 1; //two guards are enough for one rampart
 
 // create a new function for StructureSpawn
 StructureSpawn.prototype.spawnCreepsIfNecessary =
