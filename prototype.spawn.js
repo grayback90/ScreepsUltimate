@@ -1,8 +1,8 @@
 /**********************************************
 *
 * file: prototype.spawn.js
-* date: 19.03.2019
-* version: 1.1
+* date: 20.03.2019
+* version: 1.2
 *
 * funtions: logic for spawning normal and
 *           special creeps and storing
@@ -11,15 +11,6 @@
 **********************************************/
 
 var listOfRoles = ['harvester', 'lorry', 'claimer', 'upgrader', 'repairer', 'builder', 'wallRepairer', 'guard'];
-var max['harvester'] = 2;
-var max['lorry'] = 1;
-var max['upgrader'] = 2;
-var max['repairer'] = 1;
-var max['builder'] = 1;
-var max['wallRepairer'] = 1;
-var max['claimer'] = 0; //not neccessary -> spawns only if there is a claim-call -> only that no errors occur
-var max['miner'] = 1; //not neccessary -> miners spawn only if source has container near and there is no miner there  -> only that no errors occur
-var max['guard'] = 1; //two guards are enough for one rampart
 
 // create a new function for StructureSpawn
 StructureSpawn.prototype.spawnCreepsIfNecessary =
@@ -38,6 +29,16 @@ StructureSpawn.prototype.spawnCreepsIfNecessary =
         for (let role of listOfRoles) {
             numberOfCreeps[role] = _.sum(creepsInRoom, (c) => c.memory.role == role);
         }
+        let max_ = {};
+        max_['harvester'] = 2;
+        max_['upgrader'] = 2;
+        max_['repairer'] = 1;
+        max_['builder'] = 1;
+        max_['wallRepairer'] = 1;
+        max_['lorry'] = 1;
+        max_['claimer'] = 0; //not neccessary -> spawns only if there is a claim-call -> only that no errors occur
+        max_['guard'] = 1;
+
         let maxEnergy = room.energyCapacityAvailable;
         let name = undefined;
 
@@ -94,13 +95,14 @@ StructureSpawn.prototype.spawnCreepsIfNecessary =
                 }
                 // if no claim order was found, check other roles
                 // check if role has not reach maximum amount of creeps for its role
-                else if (numberOfCreeps[role] < max[role]) {
+
+                else if (numberOfCreeps[role] < max_[role]) {
                     if (role == 'lorry') {
                         name = this.createLorry(150);
                     }
                     //guard behaves like upgrader so no other condition is necessary
                     else if (role == 'guard') {
-                      name = this.createGuard(xxx);
+                      name = this.createGuard();
                     }
                     else {
                         name = this.createCustomCreep(maxEnergy, role);

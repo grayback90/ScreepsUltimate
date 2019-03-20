@@ -1,5 +1,6 @@
 20.03.2019
--
+- fixed the problem with the maximum number of creeps per role
+- tested role guard and made some changes, now it works for version 1.0 of this role
 
 19.03.2019
 - logic for the role guard

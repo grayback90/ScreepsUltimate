@@ -1,8 +1,8 @@
 /**********************************************
 *
 * file: role.guard.js
-* date: 19.03.2019
-* version: 0.9
+* date: 20.03.2019
+* version: 1.0
 *
 * funtions: works as upgrader but
 *           defends the 'base' against every
@@ -27,11 +27,11 @@ module.exports = {
         // search for the "guard" flag
         var guardFlag = Game.flags.Guard1;
         // locking on target
-        var target = this.pos.findClosestByRange(FIND_HOSTILE_CREEPS);
+        const target = creep.pos.findClosestByRange(FIND_HOSTILE_CREEPS);
 
         // if there are hostile creeps in the room
         if (hostiles.length > 0) {
-          creep.say('Enemy spotted!');
+          creep.say('Enemy!');
           creep.memory.guarding = true;
         }
         // no more hostile creeps in the room
@@ -41,12 +41,13 @@ module.exports = {
 
         // logic for guard
         if (creep.memory.guarding == true) {
-          // move to guardFlag
-          creep.moveTo(guardFlag);
-          if (target != undefined) {
-              // attacking closest target
-              this.attack(target);
-          }
+            // move to guardFlag
+            creep.moveTo(guardFlag);
+
+            if (target) {
+                // attack the enemy
+                creep.rangedAttack(target);
+            }
         }
         // work as upgrader
         else {
