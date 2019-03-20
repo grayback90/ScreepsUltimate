@@ -209,7 +209,7 @@ StructureSpawn.prototype.createMiner =
 // create a new function for StructureSpawn to create a guard
 StructureSpawn.prototype.createGuard =
     function () {
-        return this.createCreep([WORK,CARRY, MOVE, MOVE, RANGED_ATTACK], undefined,
+        return this.createCreep([TOUGH, TOUGH, TOUGH, TOUGH, TOUGH, WORK,CARRY, MOVE, MOVE, RANGED_ATTACK], undefined,
                                 { role: 'guard', working: false, guarding: false });
     };
 

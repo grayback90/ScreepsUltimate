@@ -14,8 +14,6 @@ Link to my wiki page: https://github.com/RituGray/ScreepsUltimate/wiki
 Currently working on:
 ----
 - dont use all energy to spawn creeps like harvester
-- put the maximum number of creeps per role into the code
-- new role: guard (in testing phase)
 - new function on the lorry: collects dropped energy (higher priority than collect energy from the container) -> https://docs.screeps.com/api/#Creep.pickup
 
 Shoutout:
