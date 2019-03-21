@@ -11,8 +11,7 @@ ToDos:
 
 Role ideas + modifies for existing roles (ideas from "Pantek59"):
 ----
-- modifies all creeps: -> they can spawn if RoomControlLevel () is reached
-- (2) new role "guard": -> works as upgrader, if enemies come he goes to rampart and attacks them
+- dont use all energy to spawn creeps like harvester
 - (1) new role "constructor" -> evertime new GC Level is reached puts the new buildings in specific layout --> https://docs.screeps.com/api/#ConstructionSite
 - (1) modify "builder": -> only spawns if there is a construction site, after building go upgrade till death
 - (1) modify "creeps": -> go to save-flag if enemies come to the room, after that go back to work

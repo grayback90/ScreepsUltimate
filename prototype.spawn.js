@@ -20,6 +20,9 @@ StructureSpawn.prototype.spawnCreepsIfNecessary =
         // find all creeps in room
         /** @type {Array.<Creep>} */
         let creepsInRoom = room.find(FIND_MY_CREEPS);
+        // get current RCL (RoomControlLevel)
+        // Game.spawns.Spawn1.room.controller.level
+        let rcl = room.controller.level;
 
         // count the number of creeps alive for each role in this room
         // _.sum will count the number of properties in Game.creeps filtered by the

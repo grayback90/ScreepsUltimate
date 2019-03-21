@@ -13,8 +13,7 @@ Link to my wiki page: https://github.com/RituGray/ScreepsUltimate/wiki
 
 Currently working on:
 ----
-- dont use all energy to spawn creeps like harvester
-- new function on the lorry: collects dropped energy (higher priority than collect energy from the container) -> https://docs.screeps.com/api/#Creep.pickup
+- modifies all creeps: -> they can spawn if RoomControlLevel () is reached
 
 Shoutout:
 ----
