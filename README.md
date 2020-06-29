@@ -13,7 +13,7 @@ Link to my wiki page: https://github.com/RituGray/ScreepsUltimate/wiki
 
 Currently working on:
 ----
-- modifies all creeps: -> they can spawn if RoomControlLevel () is reached
+- look at /infos/ToDo.txt
 
 Shoutout:
 ----
