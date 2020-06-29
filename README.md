@@ -17,7 +17,7 @@ Currently working on:
 
 Shoutout:
 ----
-- I startet with the code from 'th_pion'. Thanks for the awesome tutorial man!
+- I startet with the code from 'th_pion'. (Thanks for the awesome tutorial man!)
 - Youtube: https://www.youtube.com/user/thPionGaming
 - Github: https://github.com/thPion/Screeps-Nooby-Guide
 - I used the code from "Pantek59" his account from Github for creep ideas. Thanks for that!

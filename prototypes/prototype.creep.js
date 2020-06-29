@@ -1,8 +1,8 @@
 /**********************************************
 *
 * file: prototype.creep.js
-* date: 18.03.2019
-* version: 1.1
+* date: 29.06.2020
+* version: 1.2
 *
 * funtions: logic for creeps to get
 *           energy
@@ -10,16 +10,16 @@
 **********************************************/
 
 var roles = {
-    harvester: require('role.harvester'),
-    upgrader: require('role.upgrader'),
-    builder: require('role.builder'),
-    repairer: require('role.repairer'),
-    wallRepairer: require('role.wallRepairer'),
-    longDistanceHarvester: require('role.longDistanceHarvester'),
-    claimer: require('role.claimer'),
-    miner: require('role.miner'),
-    lorry: require('role.lorry'),
-    guard: require('role.guard')
+    harvester: require('./roles/role.harvester'),
+    upgrader: require('./roles/role.upgrader'),
+    builder: require('./roles/role.builder'),
+    repairer: require('./roles/role.repairer'),
+    wallRepairer: require('./roles/role.wallRepairer'),
+    longDistanceHarvester: require('./roles/role.longDistanceHarvester'),
+    claimer: require('./roles/role.claimer'),
+    miner: require('./roles/role.miner'),
+    lorry: require('./roles/role.lorry'),
+    guard: require('./roles/role.guard')
 };
 
 Creep.prototype.runRole =

@@ -1,0 +1,37 @@
+ToDos:
+----
+- optimization on all roles (example: only upgrader should use energy from storage if necessary and other changes)
+- all screeps (with work-bodypart) get the upgrader or collecter funktionality if they have nothing else to do
+- after GCL is 2: claim new room and build it up (stable population, upgrade roomcontroller, build towers and other structures)
+- additional roles: guard, healer, knight, ranger, etc. (see Role ideas below)
+- modify all screeps: "panikroom", building roads (maybe a thing for the constructor), etc. (see Role ideas below)
+- working with a defcon level like: https://arcath.net/2016/12/screeps-part-8-constructors-defcon
+- more testing and optimization on the AI of the screeps on my on server
+- testing with bots
+- testing on a real server
+
+Role ideas + modifies for existing roles (ideas from "Pantek59"):
+----
+- dont use all energy to spawn creeps like harvester
+- 1-5 = Priority
+- (5) new role "constructor" -> evertime new GC Level is reached puts the new buildings in specific layout --> https://docs.screeps.com/api/#ConstructionSite
+- (1) modify "builder": -> only spawns if there is a construction site, after building go upgrade till death
+- (3) modify "creeps": -> go to save-flag if enemies come to the room, after that go back to work
+- (4) modify "creeps": -> go to save-flag if all guards are dead and enemy is attacking them or the RoomController
+- (4) modify "creeps": -> check if "Panic Flag" is set, if not he set it a the panic room if they must go there
+- (5) new role "energy hauler": -> transport energy from remote stationary harvesters back to spawn room
+- (1) new role "miniHarvester": -> needs only 200 energy, if all creeps die and not enough energy is stored
+- (3) new role "protector": -> spawns if "Panic Flag" is set and goes there to protect this room
+- (3) new role "remoteHarvester": -> harvest sources in remote rooms
+- (4) new role "guard": goes to "Protect Flag" and guards this area
+- (5) new role "remoteStationaryHarvester": -> like a miner just in a remote room and can build container if there is no
+- (2) new role "demolischer": -> spawned if "Demolisher Flag" is set and dismantles construction site
+- (2) new role: "scout": -> runs to other rooms and tells if he is attack or if he find hostile/other creeps
+- (4) modify "scout": dont come back if you get attacked or find other creeps, set "Gank Flag" and try to leave the room to search for more
+- (4) new role: "healer": heals the tank or ranger
+- (4) new role: "ranger": ranged attacker, tries to stay behind tank or out of meele range
+- (4) new role: "tank": high life, meele attacker
+- (5) new squad: "Gank Squad": one healer, two ranger, one tank
+- (5) modify "Gank Squad": if scout founds a room with other creeps go there and gank
+- (5) modify "Gank Squad": attack creeps near RoomController, if there is a wall or rampart, attack all creeps that walk through rampart
+- (1) new role: "": ->
