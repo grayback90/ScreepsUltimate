@@ -4,10 +4,10 @@
 * date: 20.03.2019
 * version: 1.0
 *
-* funtions: works as upgrader but
-*           defends the 'base' against every
-*           attacker and guard all
-*           the entrances
+* funtions: sits on "guard flag" and protect
+*           this point
+*
+* ToDo: remodel the whole role
 *
 **********************************************/
 

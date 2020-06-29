@@ -5,7 +5,11 @@
 * version: 1.0
 *
 * funtions: claims a roomcontroller in
-*           a specific room
+*           a specific room, builds a spawn
+*           and behaves then like a harvester
+*
+* ToDo: build spawn after claiming
+*       behave like harvester till death
 *
 **********************************************/
 
