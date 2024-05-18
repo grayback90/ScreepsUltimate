@@ -1,3 +1,8 @@
+18.05.2024
+- removed all unused roles
+- changed the max-count
+- tried running it
+
 29.06.2020
 - new ideas in ToDo
 - new file-structure

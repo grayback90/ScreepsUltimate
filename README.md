@@ -3,10 +3,9 @@ Refactored and chaned scripts for the game "screeps".
 
 Info:
 ----
-This is my refactoed AI for the game 'Screeps'.
+This is my refactored AI for the game 'Screeps'.
 Inspired by the tutorial from 'th_pion'.
 But from now on I will work alone on my AI and develop it further.
-Link to my wiki page: https://github.com/RituGray/ScreepsUltimate/wiki
 
 - Screeps Documentation: https://docs.screeps.com/index.html
 - Screeps API Reference: https://docs.screeps.com/api/
