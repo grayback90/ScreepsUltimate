@@ -1,16 +1,15 @@
 /**********************************************
 *
-* file: role.lorry.js
-* date: 18.03.2019
-* version: 1.0
+* file: role.harvester.js
+* date: 18.12.2025
+* version: 0.1
 *
-* funtions: takes the energy from the
-*           container to other structures
+* funtions: harvest the source in the
+*           spawn room and fills the
+*           extensions and spawn
 *
 **********************************************/
 
-// lorry does the same as the harvester, only that this role takes the energy
-// from the container and not the source directly
 module.exports = {
     // a function to run the logic for this role
     /** @param {Creep} creep */
@@ -34,8 +33,7 @@ module.exports = {
                 // a property called filter which can be a function
                 // we use the arrow operator to define it
                 filter: (s) => (s.structureType == STRUCTURE_SPAWN
-                             || s.structureType == STRUCTURE_EXTENSION
-                             || s.structureType == STRUCTURE_TOWER)
+                             || s.structureType == STRUCTURE_EXTENSION)
                              && s.energy < s.energyCapacity
             });
 
@@ -52,25 +50,9 @@ module.exports = {
                 }
             }
         }
-        // if creep is supposed to get energy
+        // if creep is supposed to harvest energy from source
         else {
-            // find closest container
-            let container = creep.pos.findClosestByPath(FIND_STRUCTURES, {
-                filter: s => s.structureType == STRUCTURE_CONTAINER && s.store[RESOURCE_ENERGY] > 0
-            });
-
-            if (container == undefined) {
-                container = creep.room.storage;
-            }
-
-            // if one was found
-            if (container != undefined) {
-                // try to withdraw energy, if the container is not in range
-                if (creep.withdraw(container, RESOURCE_ENERGY) == ERR_NOT_IN_RANGE) {
-                    // move towards it
-                    creep.moveTo(container);
-                }
-            }
+            creep.getEnergy(false, true);
         }
     }
 };

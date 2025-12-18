@@ -1,17 +1,17 @@
 /**********************************************
 *
 * file: main.js
-* date: 29.06.2020
-* version: 1.0
+* date: 18.12.2025
+* version: 0.1
 *
 * funtions: main logic
 *
 **********************************************/
 
 // import modules
-require('prototypes/prototype.creep');
-require('prototypes/prototype.tower');
-require('prototypes/prototype.spawn');
+require('prototype.creep');
+require('prototype.tower');
+require('prototype.spawn');
 
 module.exports.loop = function () {
     // check for memory entries of died creeps by iterating over Memory.creeps

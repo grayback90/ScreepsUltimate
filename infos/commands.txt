@@ -1,0 +1,2 @@
+system.setTickDuration(250) -> 4x faster game
+system.resetAllData() -> delete all and start new

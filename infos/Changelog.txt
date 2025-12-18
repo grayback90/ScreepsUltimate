@@ -1,33 +1,4 @@
-18.05.2024
-- removed all unused roles
-- changed the max-count
-- tried running it
-
-29.06.2020
-- new ideas in ToDo
-- new file-structure
-- created new empty role-files
-- changed paths at all necessary locations
-
-21.03.2019
-- working on a function that creeps only spawn at specific RCL (RoomControlLevel)
-
-20.03.2019
-- fixed the problem with the maximum number of creeps per role
-- tested role guard and made some changes, now it works for version 1.0 of this role
-- tidying up the wiki for the Github-Repo
-- changed the guard bodyparts (to make it tougher)
-
-19.03.2019
-- logic for the role guard
-- implementing the spawning of guards
-- setting all "old" roles to version 1.0 because the work as intended
-- writing version 1.0 of the guard role
-
-18.03.2019:
-- first commit
-- changed some details in the README
-- import all files from my ScreepsLegacy-Repo
-- changed some of the files, but no big changes
-- despite number of maximum creeps per role is now in the code
-- create empty file for future role "guard" + comments of my thoughts
+18.12.2025
+- restart new
+- removed all unnessecary roles and code
+- removed folder structure
