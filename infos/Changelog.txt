@@ -1,3 +1,7 @@
+19.12.2025
+- new role "builder"
+- new role "repairer"
+
 18.12.2025
 - restart new
 - removed all unnessecary roles and code

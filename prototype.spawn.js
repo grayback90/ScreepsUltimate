@@ -10,7 +10,7 @@
 *
 **********************************************/
 
-var listOfRoles = ['harvester', 'upgrader'];
+var listOfRoles = ['harvester', 'upgrader', 'builder', 'repairer'];
 
 // create a new function for StructureSpawn
 StructureSpawn.prototype.spawnCreepsIfNecessary =
@@ -34,7 +34,9 @@ StructureSpawn.prototype.spawnCreepsIfNecessary =
         }
         let max_ = {};
         max_['harvester'] = 2;
-        max_['upgrader'] = 2;
+        max_['upgrader'] = 1;
+        max_['builder'] = 1;
+        max_['repairer'] = 1;
 
         let maxEnergy = room.energyCapacityAvailable;
         let name = undefined;
@@ -57,6 +59,16 @@ StructureSpawn.prototype.spawnCreepsIfNecessary =
             else if (numberOfCreeps['upgrader'] < max_['upgrader']) {
                 // create a harvester because it can work on its own
                 name = this.createCustomCreep(room.energyAvailable, 'upgrader');
+                this.logName(name, numberOfCreeps);
+            }
+            else if (numberOfCreeps['builder'] < max_['builder']) {
+                // create a harvester because it can work on its own
+                name = this.createCustomCreep(room.energyAvailable, 'builder');
+                this.logName(name, numberOfCreeps);
+            }
+            else if (numberOfCreeps['repairer'] < max_['repairer']) {
+                // create a harvester because it can work on its own
+                name = this.createCustomCreep(room.energyAvailable, 'repairer');
                 this.logName(name, numberOfCreeps);
             }
         }
